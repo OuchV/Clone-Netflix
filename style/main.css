@@ -9,9 +9,12 @@
     box-sizing: border-box;
 }
 
+/* Elementos base */
+
 body {
     background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'arial', 'Times New Roman', Times, serif;
+    color: white;
 }
 
 header .container {
@@ -37,3 +40,71 @@ header nav a {
 header nav a:hover {
     color: #fff;
 }
+
+/*Filme Principal*/
+
+.filme-principal {
+    font-size:16px;
+    background:linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('/Clone-Netflix/img/Dark-Netflix-espelhado.png');
+
+    height: 550px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}   
+
+.container {
+    padding-left: 20px;
+}
+
+.filme-principal .container {
+    width: 50%;
+}
+
+.filme-principal .container .botoes {
+    margin-top: 40px;
+}
+
+.filme-principal .container .titulo {
+    margin-top: 10%;
+    margin-bottom: 35px;
+    font-size: 60px ;
+    font-family:'Trebuchet MS', Arial, sans-serif;
+}
+
+ .botoes .botao {
+    background-color: rgba(0, 0, 0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor:pointer;
+    transition: 0.7s ease all;
+}   
+
+.botao:hover {
+    color: black;
+    background-color: white;
+}
+
+.botao i {
+    margin-right: 7px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
